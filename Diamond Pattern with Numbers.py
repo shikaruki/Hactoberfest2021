@@ -1,23 +1,22 @@
-def pattern(n):
-    k = 2 * n - 2
-    x = 0
-    for i in range(0, n):
-        x += 1
-        for j in range(0, k):
-            print(end=" ")
-        k = k - 1
-        for j in range(0, i + 1):
-            print(x, end=" ")
-        print("\r")
-    k = n - 2
-    x = n + 2
-    for i in range(n, -1, -1):
-        x -= 1
-        for j in range(k, 0, -1):
-            print(end=" ")
-        k = k + 1
-        for j in range(0, i + 1):
-            print(x, end=" ")
-        print("\r")
- 
-pattern(5)
+print(end="Enter Row Size (Total Lines): ")
+rowSize = int(input())
+if rowSize%2==0:
+  halfDiamRow = int(rowSize/2)
+else:
+  halfDiamRow = int(rowSize/2)+1
+space = halfDiamRow-1
+for i in range(1, halfDiamRow+1):
+  for j in range(1, space+1):
+    print(end=" ")
+  space = space-1
+  for j in range(2*i-1):
+    print(end="*")
+  print()
+space = 1
+for i in range(1, halfDiamRow):
+  for j in range(1, space+1):
+    print(end=" ")
+  space = space+1
+  for j in range(1, 2*(halfDiamRow-i)):
+    print(end="*")
+  print()
