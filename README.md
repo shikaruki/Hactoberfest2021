@@ -47,7 +47,7 @@ Go through the checklist on the pull request template to guarantee your submissi
 *Note:* Don't Forget to add `hacktoberfest-accepted` Label.
 
 
-Please check first and then send your codes with discription.
+Please check first and then send your codes with description.
 
 *All the best for the event *
 
