@@ -22,7 +22,7 @@ int lin(int arr[],int n,int key){
     return -1;
 }
 
-int main()
+void main()
 {
     int key,n,i;
     int arr[n];
@@ -32,7 +32,7 @@ int main()
         cout<<"eneter the "<<i+1<<" number";
         cin>>arr[i];
     }
-    //int num
+    
     cout<<"enter the key ";
     //cin>>key;
     int data=lin(arr,n,5);
