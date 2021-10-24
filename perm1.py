@@ -1,9 +1,9 @@
 import math
-l=[0,1,2,3,4,5,6,7,8,9]
+l=list(map(int.input().split())
 str1=""
 r=0
 q=0
-count=1000000
+count=int(input("Enter the value of n:")
 def lex(l1,count,str1):
     r=count%math.factorial(len(l1)-1)
     q=count//math.factorial(len(l1)-1)
@@ -19,4 +19,4 @@ def lex(l1,count,str1):
       return(l1,r,(str1+str2))
 while (count-r)!=0:
     (l,count,str1)=lex(l,count,str1)
-print("The millionth permutation lexicographically = ",str1)
+print("The permutation lexicographically = ",str1)
