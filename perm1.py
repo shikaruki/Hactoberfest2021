@@ -1,10 +1,11 @@
 import math
 print("Enter the integers:")
-l=list(map(int.input().split())
+l=list(map(int,input().split()))
+l=sorted(l)
 str1=""
 r=0
 q=0
-count=int(input("Enter the value of n:")
+count=int(input("Enter the value of n:"))
 def lex(l1,count,str1):
     r=count%math.factorial(len(l1)-1)
     q=count//math.factorial(len(l1)-1)
