@@ -40,7 +40,7 @@ down into multiple commits. You can use emoji here too :sparkles:
 
 ---
 
-
+# Happy hacktoberFest 2021 :)
 ### 3. Lastly, submit your Pull Request
 Go through the checklist on the pull request template to guarantee your submission is valid. Our team will review your application, approve and merge your submission if everything is correct. Otherwise, you will get notified of the changes requested in the pull request comment section.
 
