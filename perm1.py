@@ -1,4 +1,5 @@
 import math
+print("Enter the integers:")
 l=list(map(int.input().split())
 str1=""
 r=0
