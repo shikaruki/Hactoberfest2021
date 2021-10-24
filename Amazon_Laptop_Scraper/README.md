@@ -34,7 +34,7 @@ Run ```scrapy crawl amazon -o filename.csv```
 This python script runs and output a json or csv file what ever you choose.
 This json or csv file contains item price, discount price and link to that product. 
 
-## json file'''
+## json file sample'''
 
 {"name": "HP 15 (2021) Thin & Light 10th Gen Intel Core i3 Laptop, 8GB RAM, 512GB SSD, 39.62 cms (15.6\") FHD Screen, Windows 10, MS Office, Jet Black (15s-du1516TU)", "price": "49,999", "discprice": "41,990", "link": "https://www.amazon.in/HP-Laptop-Screen-Windows-15s-du1516TU/dp/B095YC5VH4?dchild=1"},
 {"name": "Dell 15 (2021) Laptop i3-1115G4, 8GB, 256GB SSD, Win 10 + MS Office, Integrated Graphics, 15.6\" (39.61 cms) FHD Display, Carbon Color (Inspiron 3511, D560581WIN9BE)", "price": "56,776", "discprice": "41,990", "link": "https://www.amazon.in/Dell-i3-1115G4-Integrated-3511-D560581WIN9BE/dp/B09F3QP9JS?dchild=1"},
