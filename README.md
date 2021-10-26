@@ -2,8 +2,8 @@
 * When the **Hacktoberfest20** comes to an end, I will be distributing some free Open Source **t-shirts** to a few contributors
 <h1 align=center> Hacktoberfest2021 </h1>
 
- Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2021 challenge and earn a limited edition T-shirt.
-📢 Register Yourself for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.
+ Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2021 challenge and earn a limited edition T-shirt or plant a tree in your name!
+📢 Register Yourself for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥 or plant a tree in your name.
 
 ## What's in it for you?
 - Say hello to everyone in the discussion and tell us about your skills and experiences
@@ -21,7 +21,7 @@
 Fork this repository and make changes in code as required. You can change it online or by cloning it in your device. Then Pust it on your Forked Repo for further Actions. Do not use special characters in the template above.
 
 ### 2. Write a Good Commit Message
-You have written some code in your branch, and are ready to commit. So, make sure to written good, clean commit messages. Let's review the anatomy of a commit message.
+You have written some code in your branch, and are ready to commit. So, make sure to write good, clean commit messages. Let's review the anatomy of a commit message.
 
 
 ---
@@ -44,7 +44,7 @@ down into multiple commits. You can use emoji here too :sparkles:
 ### 3. Lastly, submit your Pull Request
 Go through the checklist on the pull request template to guarantee your submission is valid. Our team will review your application, approve and merge your submission if everything is correct. Otherwise, you will get notified of the changes requested in the pull request comment section.
 
-*Note:* Don't Forget to add `hacktoberfest-accepted` Label.
+*Note:* Don't Forget to add the `hacktoberfest-accepted` Label.
 
 
 Please check first and then send your codes with description.
