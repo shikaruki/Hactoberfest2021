@@ -1,0 +1,3 @@
+speedtest-cli package
+tkinter 
+speedtest
