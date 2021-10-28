@@ -1,25 +1,15 @@
 # Program to display the Fibonacci sequence up to n-th term
 
-nterms = int(input("How many terms? "))
+N = int(input("Number of elements in Fibonacci Series, N, (N>=2) : "))
 
-# first two terms
-n1, n2 = 0, 1
-count = 0
+#initialize the list with starting elements: 0, 1
+fibonacciSeries = [0,1]
 
-# check if the number of terms is valid
-if nterms <= 0:
-   print("Please enter a positive integer")
-# if there is only one term, return n1
-elif nterms == 1:
-   print("Fibonacci sequence upto",nterms,":")
-   print(n1)
-# generate fibonacci sequence
-else:
-   print("Fibonacci sequence:")
-   while count < nterms:
-       print(n1)
-       nth = n1 + n2
-       # update values
-       n1 = n2
-       n2 = nth
-       count += 1
+if N>2:
+	for i in range(2, N):
+		#next elment in series = sum of its previous two numbers
+		nextElement = fibonacciSeries[i-1] + fibonacciSeries[i-2]
+		#append the element to the series
+		fibonacciSeries.append(nextElement)
+
+print(fibonacciSeries)
