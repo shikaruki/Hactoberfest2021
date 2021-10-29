@@ -1,6 +1,6 @@
 def equal(arr1, arr2, n, m):
  
-    if (n != m):
+    if (n != m): #conditional_statement
         return False
 	
 	arr1.sort()

@@ -1,29 +1,23 @@
-#include <iostream>
-
+include <iostream>
 using namespace std;
-
-int gcd(int a,int b){
-    if(b==0){
-        return a;
-    }
-    return gcd(b,a%b);  //euclid thm.
+int getLCM(int a, int b){
+   int m;
+   m = (a > b) ? a : b;
+   while(true){
+      if(m % a == 0 && m % b == 0)
+      return m;
+      m++;
+   }
 }
-
-
-int main()
-{
-    int n;
-    cout<<"size : ";
-    cin>>n;
-    cout<<"enter the array elements : ";
-    int *arr = new int[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    int ans = arr[0];
-    for(int i=1;i<n;i++){
-       ans = (ans*arr[i])/gcd(ans,arr[i]);
-    }
-    cout<<"LCM of the Array : "<<ans<<endl;
-
+int getLCMArray(int arr[], int n){
+   int lcm = getLCM(arr[0], arr[1]);
+   for(int i = 2; i < n; i++){
+      lcm = getLCM(lcm, arr[i]);
+   }
+   return lcm;
+}
+int main() {
+   int arr[] = {4, 6, 12, 24, 30};
+   int n = sizeof(arr)/sizeof(arr[0]);
+   cout << "LCM of array elements: " << getLCMArray(arr, n);
 }
