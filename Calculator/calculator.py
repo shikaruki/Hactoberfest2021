@@ -2,8 +2,8 @@ from tkinter import*
 
 root = Tk()
 root.title("My First Software")
-root.minsize(width=364, height=523)
-root.maxsize(width=364, height=523)
+root.minsize(width=300, height=563)
+root.maxsize(width=464, height=553)
 #Code For Icon (Paste Here)
 
 def ScitechzCalc(source, side):
