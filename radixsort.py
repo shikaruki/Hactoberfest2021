@@ -1,38 +1,35 @@
-def countingSort(array, place):
-    size = len(array)
-    output = [0] * size
-    count = [0] * 10
-
-
-    for i in range(0, size):
-        index = array[i] // place
-        count[index % 10] += 1
-
-    for i in range(1, 10):
-        count[i] += count[i - 1]
-
-    i = size - 1
-    while i >= 0:
-        index = array[i] // place
-        output[count[index % 10] - 1] = array[i]
-        count[index % 10] -= 1
-        i -= 1
-
-    for i in range(0, size):
-        array[i] = output[i]
-
-
-def radixSort(array):
-    # Get maximum element
-    max_element = max(array)
-
-   
-    place = 1
-    while max_element // place > 0:
-        countingSort(array, place)
-        place *= 10
-
-
-data = [121, 432, 564, 23, 1, 45, 788]
-radixSort(data)
-print(data)
+def counting_sort(list_vals, n, place):                                         
+    integer_range = 10;                                                         
+    freq =[0 for i in range(0, integer_range)];                                 
+    list_sorted = [0 for i in range(0, n)];                                     
+                                                                                
+    for i in range(0, n):                                                       
+        freq[(list_vals[i]/place)%integer_range] += 1;                          
+                                                                                
+    for i in range(1, integer_range):                                           
+        freq[i] += freq[i-1];                                                   
+                                                                                
+    i = n-1;                                                                    
+    while (i>=0):                                                               
+        list_sorted[freq[(list_vals[i]/place)%10]-1]=list_vals[i];              
+        freq[(list_vals[i]/place)%10] -= 1;                                     
+        i -= 1;                                                                 
+                                                                                
+    for j in range(0, n):                                                       
+        list_vals[j]=list_sorted[j];                                            
+                                                                                
+def radix_sort(list_vals):                                                      
+    n = len(list_vals);                                                         
+    max_element = max(list_vals);                                               
+    mul=1;                                                                      
+    while (max_element):                                                        
+        counting_sort(list_vals, n, mul);                                       
+        mul *= 10;                                                              
+        max_element /= 10;                                                      
+                                                                                
+    return list_vals;                                                           
+                                                                                
+if __name__ == "__main__":                                                      
+    list_vals = [3, 1, 2, 3, 6, 8, 5, 4];                                       
+    print("Collection before sorting: %s" % str(list_vals));                    
+    print("Sorted list elements: %s" % str(radix_sort(list_vals)));
