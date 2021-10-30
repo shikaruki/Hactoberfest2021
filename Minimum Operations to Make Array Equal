@@ -1,0 +1,11 @@
+class Solution {
+            public long minOperations(int N) {
+
+                if (N % 2 == 1) {
+                    long a = (N - 1) / 2;
+                    return a * (a + 1);
+                }
+                long a = N / 2;
+                return a * a;
+            }
+        }
