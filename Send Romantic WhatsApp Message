@@ -1,0 +1,62 @@
+
+"""
+
+
+
+         # Author: Adarsh Addee
+         # Time: 17:57
+         # Date: 29 October 2021
+         # Aim: Send ROMANTIC message to your love
+         # Hacktoberfest2021
+         # Github: https://github.com/adarshaddee
+      
+      
+      
+      
+      
+      
+      
+         
+      
+  - Important Note  
+         
+         
+    First you have to enter:
+    - how many times this will run
+    - your chat-person whatsapp number
+    - your message
+    - time in hour(24 hour format)
+    - minute
+    
+
+
+
+
+
+"""
+
+
+
+
+
+
+
+import pywhatkit
+
+times = int(input("How many times you want to send a same mesaage: "))
+
+number = int(input("Please enter your chat-person whatsapp number: "))
+
+mssg = str(input("What message you want to send: "))
+
+hour = int(input("Enter the hour(24 hour format): "))
+min = int(input("Enter the minute: "))
+
+print("Please wait......")
+
+
+for i in range(times):
+    pywhatkit.sendwhatmsg(number, mssg, hour, min)
+
+
+
