@@ -1,69 +1,38 @@
-import java.util.Scanner;
+package Video10BinarySearch;
 
 public class BinarySearch {
-	
-public static int binarySearch(int[] a,int k){
-	    
-	int low = 0;
-	int high = a.length-1;
-	
+    public static void main(String[] args) {
 
-	
-	int ans = -1;
-	
-	while(low <= high)
-	{
-		
-		int mid = (low+high)/2;
-		if(k<a[mid])
-		{
-			high = mid -1;
-		}
-		else if(k>a[mid])
-		{
-			low = mid + 1;
-		}
-		else
-		{
-			ans = mid;
-			return ans;
-		}
-		
-	}
-	return ans;
-		
-	  }
-	
-	private static void Display(int arr[])
-	{
-		for (int val : arr) {
-			
-			System.out.println(val);
-			 
-		}	
-	}
-	
-public static void main(String[] args) {
-	
-		
-		Scanner scn = new Scanner(System.in);
-		
-		int tc = scn.nextInt();
-		
-		int arr[] = new int[tc];
-	
-		for (int i = 0; i < arr.length; i++) {
-			
-			arr[i] = scn.nextInt();
-			 
-		}	
-		
-		
-		int k = scn.nextInt();
-		
-		int ans = binarySearch(arr,k);
-		System.out.println(ans);
-		
-	}
+        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
+        int target = 252;
+        int ans = binarySearch(arr, target);
+        System.out.println(ans);
 
+
+    }
+
+    // return the index
+    // return -1 if it does not exist
+    static int binarySearch(int[] arr, int target) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start <= end) {
+            //find mid element
+//            int mid = (start + end)/2;                   // might be possible that (start + end) exceed the range of integer java
+            int mid = start + (end - start) / 2;
+
+            if (target < arr[mid]) {
+                end = mid - 1;
+            } else if (target > arr[mid]) {
+                start = mid + 1;
+            } else {
+                // ans found
+                return mid;
+            }
+
+
+        }
+        return -1;
+    }
 }
