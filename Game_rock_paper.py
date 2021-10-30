@@ -28,13 +28,13 @@ while userWins<3 and compWins<3:
 
 #choosing the winners
     if user==(comp+1)%3:
-        print("The computer is " +c+" You are "+u+". You won! Congrats!.\n")
+        print("The computer is " +c+" You are "+u+". You won! Congratulation.\n")
         userWins+=1
     elif user==(comp-1)%3:
         print("The computer is " +c+" You are "+u+". You lose... Computer won!.\n")
         compWins+=1
     else:
-        print("The match has drawed... Both you and the computer are "+u+".Better try again.\n")
+        print("The match is drawn... Both you and the computer are "+u+".Better luck next time.\n")
         draw+=1
 
 totalGames=userWins+compWins+draw
