@@ -1,1 +1,3 @@
-int(input("Enter First Number"))
+a = int(input("Enter First Number"))
+b = int(input("Enter Second Number"))
+print("Sum of two numbers is: ", a+b)
