@@ -45,7 +45,7 @@ down into multiple commits. You can use emoji here too :sparkles:
 Go through the checklist on the pull request template to guarantee your submission is valid. Our team will review your application, approve and merge your submission if everything is correct. Otherwise, you will get notified of the changes requested in the pull request comment section.
 
 *Note:* Don't Forget to add `hacktoberfest-accepted` Label.
-
+Feel free to contribute to this repository.
 
 Please check first and then send your codes with description.
 
