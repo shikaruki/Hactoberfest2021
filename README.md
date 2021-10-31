@@ -45,11 +45,25 @@ down into multiple commits. You can use emoji here too :sparkles:
 Go through the checklist on the pull request template to guarantee your submission is valid. Our team will review your application, approve and merge your submission if everything is correct. Otherwise, you will get notified of the changes requested in the pull request comment section.
 
 *Note:* Don't Forget to add `hacktoberfest-accepted` Label.
-
+Feel free to contribute to this repository.
 
 Please check first and then send your codes with description.
 
 *All the best for the event *
 
+In Short
+
+Contribution for HacktoberFest 2021 Accepted
+
+Contribute your Code with Proper problem statement/Title
+
+*Fork this  Repository , <b> Mark it Star </b>, Upload Your file(make sure it is not already present in the repo) , Contribute and then create a Pull Request*
+
+ Follow the above steps Only then your PR will be merged .
+ 
+Feel free to make contribution to this repo.
+Thank You!!!
+ 
+Happy Contributing !!
 
 ### Show some ❤ by starring the repository.
