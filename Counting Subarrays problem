@@ -1,0 +1,38 @@
+Problem :
+
+    Given an array A of N non-negative numbers and you are also given non-negative number B.
+
+    You need to find the number of subarrays in A having sum less than B. We may assume that there is no overflow.
+    
+    
+Solution :
+
+int Solution::solve(vector<int> &A, int B) {
+    int n = A.size();
+
+    long long a[n];
+    a[0] = A[0];
+
+    for(int i = 1; i < n; i++){
+        a[i] = a[i-1] + A[i];
+    }
+
+    int l, e, mid, ans = 0;
+    for(int i = 0; i < n; i++){
+        l = i;
+        e = n-1;
+        while(l < e){
+            mid = (l+e)/2;
+            if(a[mid] - a[i] + (long long)A[i] >= B){
+                e = mid;
+            }
+            else{
+                l = mid+1;
+            }
+        }
+        if(a[l] - a[i] + (long long)A[i] >= B) ans += l-i;
+        else ans += l-i+1;
+    }
+
+    return ans;
+}
