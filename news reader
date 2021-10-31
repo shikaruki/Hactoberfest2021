@@ -1,0 +1,23 @@
+import requests
+import json
+
+def speak(str):
+    from win32com.client import Dispatch
+    speak = Dispatch("SAPI.SpVoice")
+    speak.Speak(str)
+
+if __name__ == '__main__':
+    try:
+        speak("News for Today, Lets begin")
+        url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=036d61ce523f44b7aeaf8a3024e5795c"
+        news = requests.get(url).text
+        news_dict = json.loads(news)
+        print("News started, Listen carefully!!..else, see here->>>")
+        arts = news_dict['articles']
+        for i in arts:
+            speak(i['title'])
+            print(i['title'])
+            speak("Moving on to the next News, Listen carefully")
+        speak("Thanks for listening, Byy")
+    except Exception as e:
+        print("No Internet connection...Please connect with internet!!")
