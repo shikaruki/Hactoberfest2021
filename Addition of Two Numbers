@@ -1,1 +1,4 @@
-int(input("Enter First Number"))
+A = int(input("Enter First Number : "))
+B = int(input("Enter Second Number : "))
+C = A + B
+print("Addition of A and B is ",C)
