@@ -1,0 +1,20 @@
+"""
+
+    # Author: Adarsh Addee
+    # Aim: Backup Instagram Account
+    # Date: October 29, 2021
+    # Hacktoberfest2021
+    # Github: https://github.com/adarshaddee
+    
+    # Note:
+        - Enter instagram username
+
+"""
+
+import instaloader
+
+insta = instaloader.Instaloader()
+account = input("Enter Username: ")
+insta.download_profile(account, profile_pic_only=False)
+
+
